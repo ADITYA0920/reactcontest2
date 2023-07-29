@@ -6,6 +6,10 @@
 
 body{
     font-family: 'REM', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1536620752150-a7e9e62a62ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 .signup-container{
     display: flex;
@@ -16,6 +20,8 @@ body{
     border: 2px solid gray;
     border-radius: 15px;
     margin: 100px auto;
+    background-color: white;
+    opacity: 0.8;
 }
 
 .card{
@@ -23,7 +29,7 @@ body{
     flex-direction: column;
     margin: 15px;
     padding: 15px;
-    border: 2px solid gray;
+    box-shadow: 10px 10px #f0f0f0;
 }
 
 .card p{
@@ -35,14 +41,20 @@ body{
 }
 .card input{
     height: 34px;
+    border: none;
+    border-bottom: 2px solid gray;
 }
 .card button{
     width: 250px;
     height: 34px;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: rgb(5, 69, 70);
     color: white;
     border-radius: 9px;
+    margin-top: 5px;
+    margin:5px auto;
+    cursor: pointer;
+
 }
 .card a{
     text-decoration: none;
@@ -68,6 +80,7 @@ body{
     justify-content: space-evenly;
     width: 70%;
     margin: 25px auto ;
+    
 }
 .profile-container .left{
     display: flex;
@@ -77,6 +90,8 @@ body{
     border: 2px solid gray;
     border-radius: 15px;
     width: 60%;
+    background-color: white;
+    opacity: 0.8;
 }
 .profile-container .right{
     padding: 10px;
@@ -88,4 +103,25 @@ body{
     width: 300px;
     height: auto;
     border-radius: 15px;
+}
+
+/* // mobile device */
+@media (max-width: 600px){
+    body{
+        background-image: none;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: auto;
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .profile-container .right img{
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+        
+    }
 }

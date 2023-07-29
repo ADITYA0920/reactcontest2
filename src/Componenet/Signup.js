@@ -16,6 +16,7 @@ let userdata = {} ;
 
         if(email.value==="" || password.value ===""){
             alert("fill all details") ;
+            return ;
         }
 
         let evalue = email.value ;
@@ -51,11 +52,11 @@ let userdata = {} ;
     <div className='signup-container'>
 
         <div className='card'>
-            <p>Welcome</p>
+            <p>Welcome 👋</p>
             <h2>Sign in into your account</h2>
             <label > Enter email</label>
             
-            <input type='text' placeholder='Enter your name'  id='email'/>
+            <input type='text' placeholder='Enter your name'  id='email' onClick={(e)=>e.preventDefault}/>
             
             <label  >Enter password</label>
             
