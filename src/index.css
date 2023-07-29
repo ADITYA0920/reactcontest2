@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* body{
+    align-items: center;
+    justify-content: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap');
+
+body{
+    font-family: 'REM', sans-serif;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 100px auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid gray;
+}
+
+.card p{
+    font-size: 15px;
+    color: gray;
+}
+.card label{
+    font-size: 15px;
+}
+.card input{
+    height: 34px;
+}
+.card button{
+    width: 250px;
+    height: 34px;
+    justify-content: center;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 9px;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(103, 103, 190);
+    font-size: 15px;
+    justify-content: center;
+    margin: 2px auto;
+}
+
+.footter{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.footter span a {
+    text-decoration: none;
+}
+
+/* //profile page */
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 25px auto ;
+}
+.profile-container .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 60%;
+}
+.profile-container .right{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 30%;
+}
+.profile-container .right img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
 }
